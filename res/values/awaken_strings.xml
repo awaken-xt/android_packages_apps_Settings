@@ -49,6 +49,12 @@
     <string name="navbar_compact_layout_title">Compact layout</string>
     <string name="navbar_compact_layout_summary">Use a compact layout in the navigation bar</string>
 
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <string name="show_dev_countdown_awaken">{count, plural,
       =1      {You are now # step away from enabling development settings.}
