@@ -112,6 +112,7 @@ android_library {
         "SystemUIUnfoldLib",
         "VendorSupport-preference",
         "kotlin-stdlib",
+        "androidx.dynamicanimation_dynamicanimation",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
