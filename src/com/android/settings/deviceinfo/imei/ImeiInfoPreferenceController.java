@@ -44,8 +44,7 @@ import com.android.settingslib.Utils;
 public class ImeiInfoPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "ImeiInfoPreferenceController";
-
-    private static final String KEY_PREFERENCE_CATEGORY = "device_detail_category";
+    private static final String KEY_PREFERENCE_CATEGORY = "basic_info_category";
     public static final String DEFAULT_KEY = "imei_info";
 
     private TelephonyManager mTelephonyManager;
@@ -188,9 +187,13 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
     }
 
     public int getPhoneType(int slotIndex) {
-        SubscriptionInfo subInfo = getSubscriptionInfo(slotIndex);
-        return mTelephonyManager.getCurrentPhoneType(subInfo != null ? subInfo.getSubscriptionId()
-                : SubscriptionManager.DEFAULT_SUBSCRIPTION_ID);
+    if (mTelephonyManager == null) {
+        Log.e(TAG, "TelephonyManager is null");
+               return TelephonyManager.PHONE_TYPE_NONE;
+               }
+    SubscriptionInfo subInfo = getSubscriptionInfo(slotIndex);
+    return mTelephonyManager.getCurrentPhoneType(subInfo != null ? subInfo.getSubscriptionId()
+            : SubscriptionManager.DEFAULT_SUBSCRIPTION_ID);
     }
 
     @VisibleForTesting
