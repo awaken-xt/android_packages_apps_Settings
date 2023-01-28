@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022-2023 The Awaken-XT Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Text Styles -->
+    <style name="awakenTextPrimary">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+
+    <style name="awakenTextPrimaryMedium" parent="awakenTextPrimary">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>
+
+    <style name="awakenTextSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Dashboard -->
+    <style name="awakenDashboardPreferenceSingle" parent="awakenPreferenceSingle">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="awakenDashboardPreferenceTop" parent="awakenPreferenceTop">
+        <item name="android:layout_marginTop">@dimen/awaken_pref_horizontal_padding</item>
+    </style>
+
+    <style name="awakenDashboardPreferenceBottom" parent="awakenPreferenceBottom">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <!-- General -->
+    <style name="awakenPreferenceSingle" parent="awakenPreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/awaken_preference_background_single</item>
+    </style>
+    
+    <style name="awakenPreferenceBase">
+        <item name="android:layout_marginStart">@dimen/awaken_pref_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/awaken_pref_horizontal_padding</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="awakenPreferenceTop" parent="awakenPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/awaken_preference_background_top</item>
+    </style>
+
+    <style name="awakenPreferenceMiddle" parent="awakenPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">@drawable/awaken_preference_background_middle</item>
+    </style>
+
+    <style name="awakenPreferenceBottom" parent="awakenPreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/awaken_preference_background_bottom</item>
+    </style>
+</resources>
