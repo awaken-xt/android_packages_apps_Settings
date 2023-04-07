@@ -54,7 +54,7 @@
         android:key="top_level_awaken_lab"
         android:title="@string/awaken_lab_dash_title"
         android:icon="@drawable/ic_settings_awaken"
-        android:order="-130"
+        android:order="-170"
         android:fragment="com.awaken.lab.AwakenLab"/>
 
     <com.android.settings.widget.HomepagePreference

@@ -13,6 +13,8 @@
 <resources
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
 
+    <!-- Dashboard -->
     <color name="homepage_awaken_background">#FFCD00</color>
+    <color name="awaken_accent_ripple">@android:color/system_accent1_500</color>
 
 </resources>
